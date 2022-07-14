@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list>li:first-child{color:deeppink;}
+        .list>li:last-child{color:deepskyblue;}
+        .list>li:nth-child(2){color:darkviolet;}
+        .list>li:nth-child(odd){background-color: gold;}
+        .list>li:nth-child(even){background-color:gainsboro;}
+        .list>li:nth-child(1),.list>li:nth-child(4){
+            font-weight: bold;
+        }
+        .list>li:nth-child(3n){font-style: italic;} 
+        /* nth-child에 n이라는 문자가 들어가면, n자리에 0,1,2,...를 넣어서 나오는 번째의 자식들이 선택됨 */
+        .list>li:nth-child(-n+3){font-size: 30px;}
+    </style>
+</head>
+<body>
+    <h2>가상클래스 선택자</h2>
+    <ul class="list">
+    <li>cris</li>
+    <li>serg</li>
+    <li>paolo</li>
+    <li>park</li>
+    <li>frank</li>
+    <li>steve</li>
+</ul>
+</body>
+</html>
