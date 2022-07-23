@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rotateX,rotateY */
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: deeppink;
+            animation: moving 1.5s infinite alternate;
+        }
+
+        @keyframes moving{
+            from{       
+            }
+
+           50%{     
+                background-color: pink;
+                transform :perspective(100px) rotateX(-180deg);
+           }
+
+            to{
+                background-color: deeppink;  
+                transform:rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <h2>animation2</h2>
+    <div class="box"></div>
+</body>
+</html>
