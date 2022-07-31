@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>문자열형</h2>
+</body>
+    <script>
+        let str1= "cris: 'cr7'";
+        console.log(str1);
+
+        let str2= 'cris: "cr7"';
+        console.log(str2);
+
+        let str3= "cris: \"cr7\"";   
+        // \는 출력하고자하는 따옴표 앞에 써주면 
+        // 두문자가 합쳐져서 하나의 따옴표를 문자로 표현해줌
+        console.log(str3);
+
+        let str4= "hello \ncr7";
+        console.log(str4);
+
+        let num1=10;
+        let num2=5;
+        let num3= "5";
+
+        console.log(num1 + num2);   //15
+        console.log(num1 + num3);   //숫자 + 문자열 = 문자열 연결("105")
+        console.log(num1 + "+" + num3 + "=" + (num1+num2));
+
+        // ``안에 ${변수명}을 작성하면 변수에 있는 값이 지정한 자리에 와서 표현됨
+        console.log(`${num1} + ${num2} = ${num1 + num2}`);
+        // "", '' 사용 금지
+    </script>
+</html>
