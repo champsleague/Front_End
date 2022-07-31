@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>객체형</h2>
+</body>
+    <script>
+        let id="apple";
+
+        const apple = {
+            id,
+            // id : "apple",
+            pw : "abcd1234",
+            age : 10
+        }
+        console.log(typeof(apple));
+        console.log(apple);
+
+        //.하위 연산자
+        // A,b  > A안의 b, A의 b
+        console.log(apple.id);
+        console.log(`password : ${apple.pw}`);
+        console.log(`age : ${apple.age}`);
+
+        apple.age=15;   // let age = 15;
+        console.log(`cris apple : ${apple.age}`);
+        console.log(apple.address);  
+        //존재하지 않는 property 사용시 undefined 출력
+    </script>
+</html>
